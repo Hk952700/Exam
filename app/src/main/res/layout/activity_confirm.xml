@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_525"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_264">
+
+        <!--<TextView
+            android:id="@+id/tv_confirm_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:text="@string/confirm_user_intfo_text"
+            android:textColor="@color/colorred"
+            android:textSize="@dimen/sp_18" />-->
+
+
+        <!--学校-->
+
+        <!--android:layout_below="@+id/tv_confirm_info_text"-->
+        <TextView
+            android:id="@+id/tv_confirm_school"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_ed_bg"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/sp_24" />
+
+        <!--年级-->
+        <TextView
+            android:id="@+id/tv_confirm_grade"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:layout_below="@+id/tv_confirm_school"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_ed_bg"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/sp_24" />
+
+
+        <!--桌号-->
+        <TextView
+            android:id="@+id/tv_confirm_candidate_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:layout_below="@+id/tv_confirm_grade"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_ed_bg"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/sp_24" />
+
+
+        <!--姓名-->
+        <TextView
+            android:id="@+id/tv_confirm_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:layout_below="@+id/tv_confirm_candidate_number"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_ed_bg"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/sp_24" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_confirm_name"
+            android:layout_alignRight="@+id/tv_confirm_name"
+            android:text="请确认无误后点击确认"
+            android:textColor="@color/colorred"
+            android:textSize="@dimen/sp_16" />
+
+
+        <!--确认and重登按钮-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_120"
+            android:layout_below="@+id/tv_confirm_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_20">
+
+
+            <Button
+                android:id="@+id/btn_confirm_login_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/buttonbackground_black"
+                android:gravity="center"
+                android:text="@string/login_again_button"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/sp_24" />
+
+
+            <Button
+                android:id="@+id/btn_confirm_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/confirm_button_selector" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/confirm_websocket_status"
+        android:layout_width="@dimen/dp_10"
+        android:layout_height="@dimen/dp_10" />
+</RelativeLayout>

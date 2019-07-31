@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+
+    <RelativeLayout
+        android:id="@+id/login_candidate_relativelayout"
+        android:layout_width="@dimen/dp_524"
+        android:layout_height="@dimen/dp_60"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_261"
+        android:background="@drawable/login_ed_bg">
+
+
+        <TextView
+            android:id="@+id/login_candidate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:text="桌号|"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/sp_31" />
+        <!--考号-->
+        <EditText
+            android:id="@+id/login_candidate_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/login_candidate_text"
+            android:digits="0123456789."
+            android:hint="请输入考号"
+            android:inputType="number"
+            android:textColor="@color/colorwhite"
+            android:textColorHint="@color/colorwhite"
+            android:textSize="@dimen/sp_31" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_ip_relativelayout"
+        android:layout_width="@dimen/dp_524"
+        android:layout_height="@dimen/dp_60"
+        android:layout_below="@+id/login_candidate_relativelayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_55"
+        android:background="@drawable/login_ed_bg">
+
+
+        <TextView
+            android:id="@+id/login_ip_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:text="   IP  |"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/sp_31" />
+
+        <!--ip-->
+        <EditText
+            android:id="@+id/login_ip_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/login_ip_text"
+            android:digits="0123456789."
+            android:hint="请输入ip"
+            android:inputType="number"
+            android:textColor="@color/colorwhite"
+            android:textColorHint="@color/colorwhite"
+            android:textSize="@dimen/sp_31" />
+    </RelativeLayout>
+    <!--确认按钮-->
+
+    <Button
+        android:id="@+id/login_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_ip_relativelayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_45"
+        android:background="@drawable/selector_login_btn_bg"
+
+      />
+
+    <!--    <RelativeLayout
+            android:layout_width="@dimen/dp_129"
+            android:layout_height="@dimen/dp_66"
+            android:layout_below="@+id/login_ip_relativelayout"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_120"
+            android:layout_marginRight="@dimen/dp_297">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/button_back_01" />
+
+            <TextView
+                android:id="@+id/login_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/login_button"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/sp_22" />
+        </RelativeLayout>-->
+    <!--
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/login_to_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人信息页面" />
+
+            <Button
+                android:id="@+id/login_to_danxuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单选页面" />
+
+            <Button
+                android:id="@+id/login_to_duoxuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="多选页面" />
+
+            <Button
+                android:id="@+id/login_to_jiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="九宫格页面" />
+
+            <Button
+                android:id="@+id/login_to_shier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="十二宫格页面" />
+
+            <Button
+                android:id="@+id/login_to_chengji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单题成绩页面" />
+
+            <Button
+                android:id="@+id/login_to_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="晋级页面" />
+        </LinearLayout>-->
+
+    <!--<Button
+        android:id="@+id/login_stop_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启服务" />
+
+    <Button
+        android:id="@+id/login_stop_service1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="停止服务" />-->
+
+    <!--  <Button
+          android:id="@+id/login_screen_capture"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="截屏" />-->
+    <RelativeLayout
+        android:id="@+id/login_websocket_status"
+        android:layout_width="@dimen/dp_10"
+        android:layout_height="@dimen/dp_10" />
+
+    <TextView
+        android:id="@+id/login_version_code_and_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="版本号" />
+</RelativeLayout>

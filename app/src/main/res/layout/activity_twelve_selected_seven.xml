@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nine_selected_five_bg">
+
+
+    <RelativeLayout
+        android:id="@+id/twelve_selected_seven_question_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_177">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/twelve_selected_seven_question_recyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_90"
+            android:layout_centerInParent="true"
+            android:overScrollMode="never">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/twelve_selected_seven_question_remove_imageview"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:layout_toRightOf="@+id/twelve_selected_seven_question_recyclerview"
+            android:background="@drawable/remove_imageview_selector"
+            android:clickable="true" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/twelve_selected_seven_option_recyclerview"
+        android:layout_width="@dimen/dp_875"
+        android:layout_height="@dimen/dp_305"
+        android:layout_below="@+id/twelve_selected_seven_question_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_64"
+        android:overScrollMode="never">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <!--确认按钮-->
+
+    <Button
+        android:id="@+id/twelve_selected_seven_confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/twelve_selected_seven_option_recyclerview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_18"
+        android:background="@drawable/confirm_button_selector" />
+
+
+    <TextView
+        android:id="@+id/twelve_selected_seven_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_175"
+        android:background="@drawable/roundrect"
+        android:gravity="center"
+        android:textColor="@color/colorwhite" />
+
+    <TextView
+        android:id="@+id/twelve_selected_seven_numberplate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/twelve_selected_seven_username"
+        android:layout_marginTop="@dimen/dp_35"
+        android:background="@drawable/roundrect"
+        android:gravity="center"
+        android:textColor="@color/colorwhite" />
+
+    <TextView
+        android:id="@+id/twelve_selected_seven_count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/twelve_selected_seven_numberplate"
+        android:layout_marginTop="@dimen/dp_65"
+        android:background="@drawable/roundrect"
+        android:gravity="center"
+        android:textColor="@color/colorwhite" />
+
+    <TextView
+        android:id="@+id/twelve_selected_seven_answer_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/twelve_selected_seven_count_down"
+        android:layout_marginTop="@dimen/dp_35"
+        android:background="@drawable/roundrect"
+        android:gravity="center"
+        android:textColor="@color/colorwhite" />
+
+    <TextView
+        android:id="@+id/twelve_selected_seven_answer_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/twelve_selected_seven_answer_num"
+        android:layout_marginTop="@dimen/dp_35"
+        android:background="@drawable/roundrect"
+        android:gravity="center"
+        android:text="十二宫格"
+        android:textColor="@color/colorwhite" />
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/twelve_selected_seven_websocket_status"
+        android:layout_width="@dimen/dp_10"
+        android:layout_height="@dimen/dp_10" />
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/exam_result_back">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_228"
+        android:layout_marginBottom="@dimen/dp_300"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/exam_result_result_image"
+            android:layout_width="@dimen/dp_113"
+            android:layout_height="@dimen/dp_113"
+            android:layout_marginLeft="@dimen/dp_112"
+            android:layout_marginTop="@dimen/dp_88"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/exam_result_result_performance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成绩"
+            android:textColor="@color/colorred"
+            android:textSize="@dimen/sp_22" />
+
+        <TextView
+            android:id="@+id/exam_result_result_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:textColor="@color/colorred"
+            android:textSize="@dimen/sp_22" />
+
+        <TextView
+            android:id="@+id/exam_result_result_ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="排名"
+            android:textColor="@color/colorred"
+            android:textSize="@dimen/sp_22" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/exam_result_name_rel"
+        android:layout_alignLeft="@+id/exam_result_name_rel"
+        android:layout_alignRight="@+id/exam_result_name_rel"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:gravity="center"
+        android:text="请填写以下内容"
+        android:textColor="@color/colorred"
+        android:textSize="@dimen/sp_16" />
+    <!--家长姓名-->
+    <RelativeLayout
+        android:id="@+id/exam_result_name_rel"
+        android:layout_width="@dimen/dp_296"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/dp_300"
+        android:layout_marginBottom="@dimen/dp_490"
+        android:background="@drawable/ed_shape">
+
+
+        <TextView
+
+            android:id="@+id/exam_result_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="    家长姓名|"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/sp_14" />
+        <!--考号-->
+        <EditText
+            android:id="@+id/exam_result_result_name_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toRightOf="@+id/exam_result_name_text"
+            android:hint="请输入家长姓名"
+            android:textColor="@color/colorwhite"
+            android:textColorHint="@color/colorwhite"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+
+    <!--家长手机号-->
+    <RelativeLayout
+        android:layout_width="@dimen/dp_296"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/dp_300"
+        android:layout_marginBottom="@dimen/dp_410"
+        android:background="@drawable/ed_shape">
+
+        <TextView
+            android:id="@+id/exam_result_result_phone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="家长手机号|"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/sp_14" />
+        <!--考号-->
+        <EditText
+            android:id="@+id/exam_result_result_phone_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toRightOf="@+id/exam_result_result_phone_text"
+            android:hint="请输入家长手机号"
+            android:textColor="@color/colorwhite"
+            android:textColorHint="@color/colorwhite"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+
+    <!--确认按钮-->
+    <Button
+        android:id="@+id/exam_result_result_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/confirm_button_selector"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="@string/confirm_button"
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/sp_24"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/dp_400"
+        android:layout_marginBottom="@dimen/dp_286"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">国学世界行复赛</string>
+    <string name="login_button">登录</string>
+    <string name="confirm_button">确认</string>
+    <string name="login_again_button">重登</string>
+    <!--<string name="confirm_user_intfo_text">请确认以下内容是您本人的信息吗?</string>-->
+</resources>

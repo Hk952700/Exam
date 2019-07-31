@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/answer_nine_selected_five_item1_rel"
+        android:layout_width="@dimen/dp_90"
+        android:layout_height="@dimen/dp_90"
+        android:layout_marginRight="@dimen/dp_73"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/answer_nine_selected_five_item1_imageview"
+            android:layout_width="@dimen/dp_90"
+            android:layout_height="@dimen/dp_90"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/answer_select_frame" />
+
+        <TextView
+            android:id="@+id/answer_nine_selected_five_item1_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="值"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_56" />
+
+    </RelativeLayout>
+</RelativeLayout>
